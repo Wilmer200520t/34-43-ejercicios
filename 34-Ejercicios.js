@@ -120,3 +120,22 @@ console.log(
 );
 console.log("Ejericicio Numero 4 \n");
 /*-----------------------------------------------------------------------*/
+//4) Programa una función que repita un texto X veces,
+// pe. miFuncion('Hola Mundo', 3)
+//devolverá Hola Mundo Hola Mundo Hola Mundo.
+const miFuncion4 = (Texto, repeticiones) => {
+  let textorepe="";
+  //agregar repeticioenes 
+  for (let i = 0; i < repeticiones; i++) {
+    textorepe+=Texto;
+    //agregar espacios
+    if(i+1 <repeticiones){
+      textorepe+="--";
+    }
+  }
+  return textorepe;
+};
+
+console.log(miFuncion4("Holaaa Que tal",4));
+
+
