@@ -64,6 +64,10 @@ console.log(
        (array[i]%2==0)
        ?pares.push(array[i]):impares.push(array[i]);
     }
-    return console.log(`Pares:[${pares}] impares: [${impares}]`);
+    let numeros={
+      pares,
+      impares
+    };
+    return console.log(numeros);
   }
   miFuncion23([1,2,3,4,5,6,7,8,9,0]);
